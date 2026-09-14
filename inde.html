@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SafeStep AI</title>
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="./style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header class="navbar">
+
+        <div class="logo">
+            SafeStep <span>AI</span>
+        </div>
+
+
+        <nav class="nav-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#detection">
+                Detection
+            </a>
+
+            <a href="demo.html">
+                Demo Video
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <section
+            class="hero-section"
+            id="home"
+        >
+
+            <div class="hero-content">
+
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        AI-POWERED ASSISTANCE
+                    </p>
+
+
+                    <h1>
+                        See the world
+                        <br>
+                        with confidence.
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        SafeStep AI uses intelligent
+                        computer vision to help people
+                        navigate their surroundings with
+                        greater awareness and confidence.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#detection"
+                            class="primary-button"
+                            id="heroStartButton"
+                        >
+                            Start Detection
+                        </a>
+
+
+                        <a
+                            href="demo.html"
+                            class="secondary-button"
+                        >
+                            Watch Demo
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="camera-card">
+
+                    <div class="camera-header">
+
+                        <div class="camera-title">
+
+                            <span class="status-dot"></span>
+
+                            <span>
+                                SafeStep AI
+                            </span>
+
+                        </div>
+
+
+                        <span class="camera-status">
+                            AI Ready
+                        </span>
+
+                    </div>
+
+
+                    <div class="camera-preview">
+
+                        <div class="camera-placeholder">
+
+                            <div class="camera-icon">
+                                ◉
+                            </div>
+
+                            <h3>
+                                Intelligent Visual Assistance
+                            </h3>
+
+                            <p>
+                                Real-time object detection,
+                                direction and movement analysis.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section
+            class="content-section"
+            id="detection"
+        >
+
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    LIVE DETECTION
+                </p>
+
+
+                <h2>
+                    Intelligent visual awareness.
+                </h2>
+
+
+                <p>
+                    Start your camera and experience
+                    real-time YOLO object detection.
+                </p>
+
+            </div>
+
+
+
+            <div class="detection-card">
+
+
+                <div class="camera-header">
+
+                    <div class="camera-title">
+
+                        <span class="status-dot"></span>
+
+                        <span>
+                            Detection Camera
+                        </span>
+
+                    </div>
+
+
+                    <span
+                        class="camera-status"
+                        id="detectionStatus"
+                    >
+                        Camera Ready
+                    </span>
+
+                </div>
+
+
+
+                <div class="detection-screen">
+
+
+                    <video
+                        id="detectionVideo"
+                        autoplay
+                        muted
+                        playsinline
+                    ></video>
+
+
+                    <canvas
+                        id="detectionCanvas"
+                    ></canvas>
+
+
+                    <div
+                        id="detectionPlaceholder"
+                        class="detection-placeholder"
+                    >
+
+                        <div class="camera-icon">
+                            ◉
+                        </div>
+
+
+                        <h3>
+                            Camera Ready
+                        </h3>
+
+
+                        <p>
+                            Click Start Detection to begin.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="detection-buttons">
+
+
+                    <button
+                        id="startDetection"
+                        class="primary-button"
+                        type="button"
+                    >
+                        Start Detection
+                    </button>
+
+
+                    <button
+                        id="stopDetection"
+                        class="secondary-button"
+                        type="button"
+                    >
+                        Stop Camera
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <section
+            class="content-section"
+            id="about"
+        >
+
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    ABOUT SAFESTEP AI
+                </p>
+
+
+                <h2>
+                    Technology designed for confidence.
+                </h2>
+
+
+                <p>
+                    SafeStep combines computer vision,
+                    tracking and intelligent risk analysis
+                    to improve environmental awareness.
+                </p>
+
+            </div>
+
+
+
+            <div class="about-grid">
+
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        AI
+                    </div>
+
+
+                    <h3>
+                        Intelligent Detection
+                    </h3>
+
+
+                    <p>
+                        YOLO computer vision identifies
+                        objects in the user's surroundings
+                        in real time.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        ⚡
+                    </div>
+
+
+                    <h3>
+                        Real-Time Processing
+                    </h3>
+
+
+                    <p>
+                        Camera frames are processed through
+                        the SafeStep AI backend to provide
+                        rapid environmental awareness.
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-card">
+
+                    <div class="about-icon">
+                        ✓
+                    </div>
+
+
+                    <h3>
+                        Hazard Awareness
+                    </h3>
+
+
+                    <p>
+                        The system combines object,
+                        direction, movement, distance,
+                        trajectory and risk information.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="footer">
+
+
+        <div class="logo">
+            SafeStep <span>AI</span>
+        </div>
+
+
+        <p>
+            AI-powered visual assistance.
+        </p>
+
+
+    </footer>
+    <script>
+        window.__SAFESTEP_BACKEND_URL__ = "https://safestepai.onrender.com";
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+    ></script>
+
+    <script
+        src="./app.js"
+        type="text/javascript"
+    ></script>
+
+
+</body>
+
+</html>
