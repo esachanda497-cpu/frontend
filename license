@@ -1,0 +1,100 @@
+# NeuraSight Custom Project License (Team members-Shounak Sarkar,Debarghya Bose,Debjyoti Pal ,Esa Chanda)
+
+
+
+**Copyright © 2026 Team NeuraSight**
+
+## 1. Permission
+
+Permission is granted to individuals and organizations to view, study, and experiment with the source code of the NeuraSight / SafeStep AI project for personal, educational, research, and non-commercial purposes.
+
+You may:
+
+* View and study the source code.
+* Run the software for personal, educational, research, and demonstration purposes.
+* Modify the source code for personal or educational experimentation.
+* Create private derivative versions for non-commercial purposes.
+* Reference the project in academic, educational, or research work with appropriate attribution.
+
+## 2. Attribution
+
+Any permitted use of this project or substantial portions of its source code must clearly acknowledge:
+
+**NeuraSight — SafeStep AI**
+**Developed by Team NeuraSight**
+
+The original copyright notice and this license must be retained in copies or substantial portions of the source code.
+
+## 3. Commercial Use
+
+Commercial use of this project, including but not limited to:
+
+* Selling the software or modified versions.
+* Incorporating substantial portions of the source code into a commercial product.
+* Offering the software as a paid service.
+* Using the project for commercial deployment.
+* Using the project's core implementation to create a competing commercial product.
+
+is **not permitted without prior written permission from Team NeuraSight**.
+
+## 4. Redistribution
+
+You may not redistribute the complete project, substantial portions of its source code, or modified versions as your own project.
+
+Redistribution for educational or research purposes may be permitted provided that:
+
+1. Team NeuraSight is clearly credited.
+2. This license is included.
+3. The original project repository is referenced where appropriate.
+4. The redistributed work does not falsely imply that it was developed by the redistributor.
+
+## 5. Ownership
+
+The source code, documentation, original project materials, branding, project name, and associated original creative materials remain the property of their respective copyright holders.
+
+This license does not transfer ownership of the project or its intellectual property.
+
+## 6. Third-Party Components
+
+This license applies only to original materials created by Team NeuraSight.
+
+Third-party libraries, frameworks, models, datasets, images, fonts, APIs, and other external components remain subject to their respective licenses and terms.
+
+Users are responsible for complying with those licenses and terms.
+
+## 7. Artificial Intelligence Models and Data
+
+Any third-party AI models, pretrained weights, datasets, or other externally sourced resources included or used by the project are not automatically covered by this license.
+
+Their respective licenses and usage restrictions continue to apply.
+
+## 8. Safety and Intended Use
+
+SafeStep AI is an assistive technology prototype intended to provide environmental awareness and hazard information.
+
+It is **not a replacement for a cane, guide dog, trained mobility assistance, or the user's own judgment**.
+
+The software should not be treated as a guaranteed safety system or as a substitute for appropriate human supervision and established accessibility equipment.
+
+## 9. No Warranty
+
+THE SOFTWARE AND ASSOCIATED ORIGINAL MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+TEAM NEURASIGHT SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE, MISUSE, OR INABILITY TO USE THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+
+## 10. Modification of This License
+
+Team NeuraSight reserves the right to release future versions of the project under different licensing terms.
+
+Versions of the project already distributed under this license remain subject to the terms applicable to that version, unless otherwise agreed in writing.
+
+## 11. Contact and Permission
+
+Requests for commercial use, redistribution beyond the permissions granted above, licensing arrangements, or other uses outside this license should be directed to Team NeuraSight.
+
+---
+
+**NeuraSight — SafeStep AI**
+**Team NeuraSight · Cognitia 2026**
+
+Copyright © 2026 Team NeuraSight. All rights reserved except for the permissions expressly granted by this license.
