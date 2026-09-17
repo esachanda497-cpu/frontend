@@ -1,0 +1,641 @@
+
+/* ========================================
+   GLOBAL RESET
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+
+    background-image: url("background.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    overflow-x: hidden;
+}
+
+
+/* ========================================
+   DARK BACKGROUND OVERLAY
+   ======================================== */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.40);
+
+    z-index: -1;
+}
+
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 22px 7%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* ========================================
+   LOGO
+   ======================================== */
+
+.logo {
+    font-size: 25px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+.logo span {
+    color: #8ed8ff;
+}
+
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.nav-links a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: #8ed8ff;
+}
+
+
+/* ========================================
+   MAIN DEMO SECTION
+   ======================================== */
+
+.demo-section {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 7% 100px;
+}
+
+
+/* ========================================
+   SECTION HEADING
+   ======================================== */
+
+.section-heading {
+    text-align: center;
+
+    max-width: 760px;
+
+    margin: 0 auto 45px;
+}
+
+
+.eyebrow {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #8ed8ff;
+
+    margin-bottom: 18px;
+}
+
+
+.section-heading h1 {
+    font-size: clamp(40px, 6vw, 65px);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.section-heading h2 {
+    font-size: clamp(32px, 5vw, 48px);
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.section-heading p:last-child {
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   DEMO CARD
+   ======================================== */
+
+.demo-card {
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.42);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    border-radius: 22px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.30);
+
+    overflow: hidden;
+
+    margin-bottom: 90px;
+}
+
+
+/* ========================================
+   CARD HEADER
+   ======================================== */
+
+.card-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 22px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.camera-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.status-dot {
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #69e38b;
+
+    box-shadow:
+        0 0 10px rgba(105, 227, 139, 0.8);
+}
+
+
+.camera-status {
+    font-size: 12px;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* ========================================
+   DEMO VIDEO CONTAINER
+   ======================================== */
+
+.video-container {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #050505;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   DEMO VIDEO
+   ======================================== */
+
+#demoVideo {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #050505;
+}
+
+
+/* ========================================
+   VIDEO PLACEHOLDER
+   ======================================== */
+
+.video-placeholder {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    color: rgba(255, 255, 255, 0.75);
+
+    z-index: 2;
+}
+
+
+.video-placeholder.hidden {
+    display: none;
+}
+
+
+.video-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+    opacity: 0.85;
+}
+
+
+.video-placeholder p {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+.video-placeholder span {
+    font-size: 13px;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* ========================================
+   LIVE CAMERA SECTION
+   ======================================== */
+
+.live-section {
+    width: 100%;
+}
+
+
+/* ========================================
+   LIVE CAMERA CONTAINER
+   ======================================== */
+
+.live-camera-container {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #050505;
+
+    overflow: hidden;
+}
+
+
+/* ========================================
+   LIVE CAMERA VIDEO
+   ======================================== */
+
+#demoCamera {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    background: #050505;
+}
+
+
+/* ========================================
+   LIVE CAMERA PLACEHOLDER
+   ======================================== */
+
+#liveCameraPlaceholder {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    z-index: 2;
+}
+
+
+#liveCameraPlaceholder.hidden {
+    display: none;
+}
+
+
+/* ========================================
+   CAMERA BUTTONS
+   ======================================== */
+
+.camera-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.primary-button,
+.secondary-button {
+    min-height: 48px;
+
+    padding: 13px 24px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    border: none;
+}
+
+
+.primary-button {
+    background: #ffffff;
+
+    color: #111111;
+}
+
+
+.primary-button:hover {
+    transform: translateY(-2px);
+
+    background: #8ed8ff;
+
+    box-shadow:
+        0 8px 25px rgba(142, 216, 255, 0.25);
+}
+
+
+.secondary-button {
+    background: rgba(255, 255, 255, 0.10);
+
+    color: #ffffff;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(10px);
+}
+
+
+.secondary-button:hover {
+    transform: translateY(-2px);
+
+    background: rgba(255, 255, 255, 0.18);
+}
+
+
+/* ========================================
+   DISABLED BUTTON
+   ======================================== */
+
+button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+
+    transform: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer {
+    padding: 50px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: rgba(0, 0, 0, 0.40);
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.footer p {
+    color: rgba(255, 255, 255, 0.60);
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .demo-section {
+        padding: 70px 5% 80px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .logo {
+        font-size: 22px;
+    }
+
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    .section-heading h1 {
+        font-size: 40px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .camera-buttons {
+        flex-direction: column;
+    }
+
+
+    .camera-buttons button {
+        width: 100%;
+    }
+
+
+    .footer {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
